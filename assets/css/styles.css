@@ -1,0 +1,909 @@
+/* COLOR VARIABLES */
+
+:root {
+    --off-white: #f4f4f4;
+    --dark-cyan: #083839;
+    --white: #ffffff;
+    --slate-black: #231F1F;
+    --bright-red: #FF3131;
+    --light-red: #f83f48;
+    --gray: #d4d4d4;
+}
+
+/* fonts  */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/poppins/Poppins-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* MplusRounded */
+@font-face {
+    font-family: 'MplusRounded';
+    src: url('./../fonts/mPlusRounded/MPLUSRounded1c-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MplusRounded';
+    src: url('./../fonts/mPlusRounded/MPLUSRounded1c-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* nunito */
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./../fonts/nunito/Nunito-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* IBMPlexSans font */
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("./../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* HEADER  */
+
+.header {
+    background-color: var(--off-white);
+    padding: 10px 0;
+    border-radius: 16px;
+}
+
+.header .brand-logo {
+    max-width: 180px;
+    margin-left: -10px;
+}
+
+.header .login-link {
+    color: var(--slate-black);
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.header .menu-btn {
+    background-color: transparent;
+    border: 0;
+    gap: 12px;
+}
+
+.header .menu-btn span {
+    height: 4px;
+    width: 38px;
+    background: linear-gradient(to right, #ff3131, #ff914d);
+}
+
+/* BANNER-SECTION  */
+
+.banner-section {
+    background-color: var(--bright-red);
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.banner-section .primary-btn {
+    background: var(--dark-cyan);
+    color: var(--white);
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 14px 34px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.banner-section .primary-btn:hover {
+    border: 1px solid var(--dark-cyan);
+    background-color: transparent;
+    color: var(--black);
+}
+
+.banner-section .secondary-btn {
+    background: var(--white);
+    color: var(--slate-black);
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 14px 50px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.banner-section .secondary-btn:hover {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+}
+
+.banner-section .banner-content h1 {
+    font-size: 78px;
+    font-weight: 500;
+    color: var(--white);
+    font-family: 'MplusRounded';
+    line-height: 78px;
+}
+
+.banner-section .banner-content p {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: var(--white);
+    margin-top: 24px;
+}
+
+.banner-section .banner-content .btn-container {
+    margin-top: 94px;
+}
+
+.banner-section .banner-content .btn-container .primary-btn {
+    padding: 14px 50px;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.banner-content h1,
+.banner-content p {
+    white-space: normal;
+    overflow: hidden;
+}
+
+.banner-content h1 span,
+.banner-content p span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* ABOUT-SECTION */
+.about-section {
+    background-color: var(--gray);
+    padding: 80px 0px;
+    overflow: hidden;
+}
+
+.about-section .about-content .about-img-container .about-img {
+    width: 100%;
+    height: auto;
+}
+
+.about-section .about-content .about-text {
+    margin-top: 50px;
+}
+
+.about-section .about-content .about-text .about-head {
+    font-family: "MplusRounded";
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--slate-black);
+    margin-bottom: 75px;
+}
+
+.about-section .about-content .about-text .about-para {
+    font-family: "IBMPlexSans";
+    font-size: 24px;
+    font-weight: 400;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 16px;
+}
+
+/* REPAIR-SECTION */
+.repair-section {
+    background-color: var(--bright-red);
+    padding-top: 120px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.repair-section .repair-content .repair-img-container .repair-img {
+    width: 100%;
+    height: auto;
+}
+
+.repair-section .repair-content .repair-text .repair-head {
+    font-family: "IBMPlexSans";
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 50px;
+    line-height: 60px;
+}
+
+.repair-section .repair-content .repair-text .repair-head span {
+    font-family: "MplusRounded";
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.repair-section .repair-content .repair-text .repair-para-main {
+    font-family: "MplusRounded";
+    font-size: 35px;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.repair-section .repair-content .repair-text .repair-para {
+    font-family: "MplusRounded";
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 1;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+/* .why-we-do */
+.why-we-do {
+    background-color: var(--gray);
+    padding: 35px 0;
+    overflow: hidden;
+}
+
+.why-we-do-left,
+.why-we-do-right {
+    max-width: 620px;
+    width: 100%;
+}
+
+.why-we-do-left {
+    padding: 40px 50px;
+    border-radius: 40px;
+    background-color: var(--white);
+}
+
+.why-we-do-title {
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.why-we-do-discription {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: sans-serif;
+    gap: 30px;
+}
+
+
+
+/* .our-services */
+.our-services {
+    background-color: var(--bright-red);
+    color: var(--white);
+    padding: 70px 0;
+}
+
+.our-services-title {
+    font-size: 74px;
+    font-family: sans-serif;
+    font-weight: 700;
+    word-spacing: -10px;
+}
+
+.our-services-sub-title {
+    font-size: 48px;
+    font-family: "Nunito";
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.our-services-img-container {
+    margin: 0 auto;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.our-services-imgs {
+    border-radius: 100px;
+    overflow: hidden;
+    max-width: 379px;
+}
+
+/* electronic-services */
+.electronic-services {
+    padding: 50px 0;
+    background-color: var(--white);
+}
+
+.electronic-services .text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.electronic-services h3 {
+    color: var(--light-red);
+    font-size: 70px;
+    font-weight: 600;
+    font-family: "Poppins";
+    line-height: 75px;
+    margin-bottom: 10px;
+}
+
+.electronic-services p {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.electronic-services button {
+    background-color: var(--light-red);
+    border-radius: 200px;
+    border: 1px solid var(--light-red);
+    color: var(--white);
+    padding: 6px 30px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Poppins";
+    width: fit-content;
+    margin: 10px 0 20px 0;
+    transition: 0.38s all ease-in-out;
+}
+
+.electronic-services button:hover {
+    background-color: transparent;
+    color: var(--light-red);
+}
+
+.electronic-services h6 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins";
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 16px;
+}
+
+.electronic-services h6::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/right-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+/* maximize-section */
+.maximize-section {
+    background-color: var(--gray);
+    padding: 80px 0;
+}
+
+.maximize-section h3 {
+    font-size: 46px;
+    font-family: 500;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: "MplusRounded";
+}
+
+.maximize-section h3 span {
+    font-size: 58px;
+    margin-top: 10px;
+}
+
+.maximize-section .text-box {
+    background-color: var(--off-white);
+    padding: 70px 40px;
+    border-radius: 30px;
+}
+
+.maximize-section .text-box h5 {
+    font-size: 36px;
+    color: var(--black);
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Roboto";
+}
+
+/* footer */
+
+.footer {
+    background: linear-gradient(90deg, #000000 0%, #727272 86.99%);
+    padding: 60px 0 20px 0;
+    overflow: hidden;
+}
+
+.footer .footer-logo {
+    max-width: 236px;
+    width: 100%;
+}
+
+.footer .text-part {
+    width: 67%;
+}
+
+.footer h3 {
+    font-size: 48px;
+    font-family: "MplusRounded";
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer h5 {
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: var(--white);
+}
+
+.footer h4 {
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: var(--white);
+}
+
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 1400px) {
+    .banner-section .banner-content h1 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+
+    .banner-section .banner-content {
+        padding-top: 60px;
+    }
+
+    .banner-section .banner-content .btn-container {
+        margin-top: 30px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-para {
+        font-size: 18px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head span {
+        font-size: 50px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-para-main {
+        margin-bottom: 15px;
+    }
+
+    .electronic-services .text-part {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-section .about-content .about-text .about-head {
+        margin-bottom: 20px;
+    }
+
+    .about-section .about-content .about-text .about-para {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .why-we-do-title {
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Nunito';
+    }
+
+    .why-we-do-left,
+    .why-we-do-right {
+        width: 100%;
+    }
+
+    .our-services-title {
+        font-size: 60px;
+    }
+
+    .our-services-sub-title {
+        font-size: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .banner-section .banner-content p {
+        font-size: 24px;
+    }
+
+    .banner-section .banner-content .btn-container .primary-btn,
+    .banner-section .secondary-btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .our-services-imgs {
+        width: 40%;
+    }
+
+    .electronic-services h3 {
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    .maximize-section .text-box {
+        padding: 50px 30px;
+    }
+
+    .maximize-section h3 {
+        font-size: 40px;
+    }
+
+    .maximize-section h3 span {
+        font-size: 48px;
+    }
+
+    .footer .text-part {
+        width: 100%;
+    }
+
+    .footer h3 {
+        font-size: 38px;
+    }
+
+    .about-section {
+        padding: 50px 0px;
+    }
+
+    .about-section .about-content .about-text {
+        margin-top: 20px;
+    }
+
+    .about-section .about-content .about-text .about-head {
+        font-size: 35px;
+    }
+
+    .about-section .about-content .about-text .about-para {
+        font-size: 16px;
+    }
+
+    .repair-section {
+        padding-top: 50px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head span {
+        font-size: 27px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-para-main {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-para {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .banner-section .header .primary-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .header .login-link {
+        font-size: 16px;
+    }
+
+    .header .menu-btn {
+        gap: 6px;
+    }
+
+    .header .menu-btn span {
+        height: 3px;
+        width: 24px;
+    }
+
+    .why-we-do-title {
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Nunito';
+    }
+
+    .why-we-do-discription {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: sans-serif;
+        gap: 30px;
+    }
+
+    .our-services-title {
+        font-size: 40px;
+    }
+
+    .our-services-sub-title {
+        font-size: 24px;
+    }
+
+    .our-services-img-container {
+        gap: 30px;
+    }
+
+    .our-services-imgs {
+        max-width: 100%;
+    }
+
+    .about-section .about-content .about-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-section .about-content .about-img-container .about-img {
+        width: 75%;
+        height: auto;
+    }
+
+    .repair-section .repair-content .repair-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .repair-section .repair-content .repair-img-container .repair-img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .container {
+        padding: 0px 20px !important;
+    }
+
+    .header .login-link {
+        font-size: 12px;
+    }
+
+    .header .menu-btn {
+        gap: 4px;
+    }
+
+    .header .menu-btn span {
+        width: 20px;
+    }
+
+    .header .brand-logo {
+        max-width: 120px;
+        margin-left: 0;
+    }
+
+    .banner-section .banner-content p {
+        font-size: 18px;
+    }
+
+    .banner-section .banner-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner-section .header .primary-btn {
+        padding: 6px 10px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .banner-section .banner-content .btn-container .primary-btn,
+    .banner-section .secondary-btn {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .banner-section .banner-content {
+        padding-top: 40px;
+    }
+
+    .banner-section {
+        padding-bottom: 40px;
+    }
+
+    .header .offcanvas-start {
+        width: 280px;
+    }
+
+    .why-we-do {
+        padding: 20px 0;
+    }
+
+    .why-we-do-left {
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+
+    .our-services {
+        padding: 50px 0px;
+    }
+
+    .our-services-imgs {
+        width: 100%;
+    }
+
+    .electronic-services h3 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .footer .footer-logo {
+        max-width: 195px;
+        width: 100%;
+    }
+
+    .electronic-services p {
+        font-size: 16px;
+    }
+
+    .electronic-services button {
+        padding: 4px 22px;
+        font-size: 16px;
+        margin: 10px 0 20px 0;
+    }
+
+    .electronic-services h6 {
+        font-size: 16px;
+        padding-left: 35px;
+    }
+
+    .electronic-services {
+        padding: 30px 0;
+    }
+
+    .maximize-section h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .maximize-section h3 span {
+        font-size: 46px;
+    }
+
+    .maximize-section .text-box h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .maximize-section .text-box {
+        padding: 40px 16px;
+    }
+
+    .footer h3 {
+        font-size: 32px;
+    }
+
+    .footer h5 {
+        font-size: 18px;
+    }
+
+    .footer h4 {
+        font-size: 18px;
+    }
+
+    .about-section .about-content .about-text .about-head {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .about-section .about-content .about-text .about-para {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-head span {
+        font-size: 22px;
+    }
+
+    .repair-section .repair-content .repair-text .repair-para-main {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-services-title {
+        font-size: 32px;
+    }
+
+    .our-services-sub-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .banner-section .banner-content h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .header .brand-logo {
+        max-width: 100px;
+        margin-left: 0;
+    }
+}
